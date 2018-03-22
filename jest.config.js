@@ -11,6 +11,6 @@ module.exports = {
 		'^react$': '<rootDir>/node_modules/react'
 	},
 	transform: {
-		"^.+\\.jsx?$": "babel-jest"
+		'^.+\\.jsx?$': 'babel-jest'
 	}
-}
+};

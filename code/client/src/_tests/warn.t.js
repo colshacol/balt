@@ -1,8 +1,5 @@
-import { warn } from '../warn.js'
+import { warn } from '../warn';
 
-const { test, expect } = global;
-
-test('warn()', () => {
-	const result = warn('dogs');
-	expect(result).toBe('DOGS');
-})
+it('warns me about things', () => {
+	expect(warn('foo')).toEqual('FOO');
+});

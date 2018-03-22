@@ -1,4 +1,4 @@
-const config = require('./dev')
+const config = require('./dev');
 
 module.exports = {
 	...config,
@@ -11,5 +11,4 @@ module.exports = {
 		logTime: true,
 		content: './code/client/dist'
 	}
-
-}
+};

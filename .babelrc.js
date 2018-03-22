@@ -6,18 +6,18 @@ const moduleResolverOptions = {
 		_scenes: './code/client/src/scenes',
 		_styles: './code/client/src/styles'
 	}
-}
+};
 
 const cssModulesOptions = {
 	generateScopedName: '_[name]-[local]',
 	context: '.${PWD}/code/client/src'
-}
+};
 
 const classPropertiesOptions = {
 	loose: true
-}
+};
 
-module.exports = (api) => {
+module.exports = api => {
 	api.cache(true);
 
 	return {
@@ -45,10 +45,13 @@ module.exports = (api) => {
 			'babel-plugin-jsx-control-statements',
 			['babel-plugin-module-resolver', moduleResolverOptions],
 			['babel-plugin-react-css-modules', cssModulesOptions],
-			["babel-plugin-flow-runtime", {
-				"assert": true,
-				"annotate": true
-			}]
+			[
+				'babel-plugin-flow-runtime',
+				{
+					assert: true,
+					annotate: true
+				}
+			]
 		]
-	}
-}
+	};
+};
